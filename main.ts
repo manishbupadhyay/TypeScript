@@ -53,17 +53,19 @@
 
 // 5- Arrow function in typeScript using => 
 // In javascript we will create function like
-let log = function(message){
-    console.log(message);
-}
-// but in type script we can create function using arrow 
-let typeFunction = (message) => {
-    console.log(message);
-}
-// if function is one line of code then we can write
-let doLog = (message) => console.log(message);
-// if we don't have parameters then we can write
-let funcType = () => console.log();
+// let log = function(message){
+//     console.log(message);
+// }
+// // but in type script we can create function using arrow 
+// let typeFunction = (message) => {
+//     console.log(message);
+// }
+// // if function is one line of code then we can write
+// let doLog = (message) => console.log(message);
+// // if we don't have parameters then we can write
+// let funcType = () => console.log();
+
+// 6- Interfaces in type script
 
 // Class and constructor in typeScript
 
