@@ -66,23 +66,51 @@
 // let funcType = () => console.log();
 
 // 6- Interfaces in type script
+// interface Point{
+//     x: number,
+//     y:number
+// }
+// let drawPoint = (point:Point) => {
+//     //..
+// }
+// drawPoint({
+//     x:1,
+//     y:2
+// })
 
-// Class and constructor in typeScript
-
+// 7 - Class in type script
 // class Point{
-//     x: number;
-//     y: number;
-
-//     constructor (x?:number, y?:number){
-//         this.x = x;
-//         this.y = y;
-//     }
+//     X: number;
+//     Y: number;
 //     draw(){
-//         console.log('X: '+ this.x + 'Y: ' + this.y)
+//         console.log('X:' + this.X + ',Y:' + this.Y);
+//     }
+//     getDistance(another:Point){
+//         //..
 //     }
 // }
-
-// let point = new Point();
-// // point.x = 1;
-// // point.y = 2;
+// // create object of class point
+// let point = new Point()
+// point.X = 1;
+// point.Y = 2;
 // point.draw();
+
+// 8- Constructor in typeScript
+
+class Point{
+    x: number;
+    y: number;
+
+    constructor (x?:number, y?:number){ // x? mean we make it optional
+        this.x = x;
+        this.y = y;
+    }
+    draw(){
+        console.log('X: '+ this.x + 'Y: ' + this.y)
+    }
+}
+
+let point = new Point();
+point.draw();
+
+// 9- Access Modifiers
