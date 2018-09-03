@@ -1,7 +1,9 @@
+"use strict";
 // 1- Type Script Hello world
 // function helloWorld(message){
 //     console.log(message);
 // }
+exports.__esModule = true;
 // var message = 'Hello World';
 // helloWorld(message);
 // 2- var and let keyword in type script
@@ -82,15 +84,67 @@
 // point.Y = 2;
 // point.draw();
 // 8- Constructor in typeScript
-var Point = /** @class */ (function () {
-    function Point(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-    Point.prototype.draw = function () {
-        console.log('X: ' + this.x + 'Y: ' + this.y);
-    };
-    return Point;
-}());
-var point = new Point();
+// class Point{
+//     x: number;
+//     y: number;
+//     constructor (x?:number, y?:number){ // x? mean we make it optional
+//         this.x = x;
+//         this.y = y;
+//     }
+//     draw(){
+//         console.log('X: '+ this.x + 'Y: ' + this.y)
+//     }
+// }
+// let point = new Point();
+// point.draw();
+// 9- Access Modifiers in TypeScript
+// Public, Private & Protected
+// class Point{
+//     private x: number;
+//     private y: number;
+//     constructor (x?:number, y?:number){ // x? mean we make it optional
+//         this.x = x;
+//         this.y = y;
+//     }
+//     draw(){
+//         console.log('X: '+ this.x + 'Y: ' + this.y)
+//     }
+// }
+// let point = new Point();
+// // Here we can't access x and y because its private and it is
+// // inside point class
+// point.draw();
+// 10- Access Modifiers in constructor parameter
+// class Point{
+//     constructor (private x?:number, private y?:number){
+//     }
+//     draw(){
+//         console.log('X: '+ this.x + ' Y: ' + this.y)
+//     }
+// }
+// let point = new Point(1,2);
+// point.draw();
+// // 11 - Property
+// class Point{
+//     constructor (private _x?:number, private _y?:number){
+//     }
+//     draw(){
+//         console.log('X: '+ this._x + ' Y: ' + this._y)
+//     }
+//     get x(){
+//         return this._x;
+//     }
+//     set x(value){
+//         if(value < 0)
+//         throw new Error('Value cannot be less than 0.');
+//         this._x = value;
+//     }
+// }
+// let point = new Point(1,2);
+// let x = point.x;
+// point.x = 20;
+// point.draw();
+// 12- Modules
+var point_1 = require("./point");
+var point = new point_1.Point(1, 2);
 point.draw();
