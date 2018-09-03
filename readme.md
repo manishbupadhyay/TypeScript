@@ -1,5 +1,6 @@
-# Type script 
-This is all my type script pratices.
-I have done this till constructor.
+# TypeScript 
+This is all my TypeScript pratices.
+
+I have done this till property.
 
 Rest in progress......
