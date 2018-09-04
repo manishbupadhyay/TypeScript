@@ -169,6 +169,14 @@
 // point.draw();
 
 // 12- Modules
-import {Point} from './point'
-let point = new Point(1,2);
-point.draw();
+// import {Point} from './point'
+// let point = new Point(1,2);
+// point.draw();
+
+// 13 - Soultion of challenge
+
+import { LikeComponent } from './like.component';
+
+let component = new LikeComponent(4, true);
+component.onClick();
+console.log(`likesCount: ${component.likeCounts}, isSelected: ${component.isSelected}`);

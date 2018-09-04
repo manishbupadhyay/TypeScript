@@ -3,7 +3,7 @@
 // function helloWorld(message){
 //     console.log(message);
 // }
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 // var message = 'Hello World';
 // helloWorld(message);
 // 2- var and let keyword in type script
@@ -145,6 +145,11 @@ exports.__esModule = true;
 // point.x = 20;
 // point.draw();
 // 12- Modules
-var point_1 = require("./point");
-var point = new point_1.Point(1, 2);
-point.draw();
+// import {Point} from './point'
+// let point = new Point(1,2);
+// point.draw();
+// 13 - Soultion of challenge
+var like_component_1 = require("./like.component");
+var component = new like_component_1.LikeComponent(4, true);
+component.onClick();
+console.log("likesCount: " + component.likeCounts + ", isSelected: " + component.isSelected);

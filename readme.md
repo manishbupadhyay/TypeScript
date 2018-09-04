@@ -1,6 +1,4 @@
 # TypeScript 
-This is all my TypeScript pratices.
+This is all my  basic TypeScript pratices which i have learnt from Udemy.
 
-I have done this till property.
-
-Rest in progress......
+TypeScript include in Angular course on Udemy by Mosh.
